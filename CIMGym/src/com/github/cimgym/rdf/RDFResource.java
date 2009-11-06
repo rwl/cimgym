@@ -8,4 +8,9 @@ import org.eclipse.emf.ecore.resource.Resource;
  */
 public interface RDFResource extends Resource {
 
+      /**
+       * Write only the subtree starting at the specified list of EObjects,
+       * which must be objects contained by the resource.
+       */
+      String OPTION_ROOT_OBJECTS = "ROOT_OBJECTS";
 }

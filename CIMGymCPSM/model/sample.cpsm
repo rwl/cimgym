@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CommonPowerSystemModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://iec.ch/TC57/2008/CIM-schema-cim13#" xmlns:cim_1="http://iec.ch/TC57/2008/CIM-schema-cim13#Package_Wires" xmlns:cim_2="http://iec.ch/TC57/2008/CIM-schema-cim13#Package_Production">
+  <Elements xsi:type="cim_1:BusbarSection" name="BB1"/>
+  <Elements xsi:type="cim_1:PowerTransformer" name="PT1"/>
+  <Elements xsi:type="cim_2:ThermalGeneratingUnit" name="TGU1"/>
+</cim:CommonPowerSystemModel>
