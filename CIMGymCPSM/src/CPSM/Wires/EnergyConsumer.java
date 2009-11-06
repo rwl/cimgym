@@ -26,7 +26,8 @@ import CPSM.LoadModel.LoadResponseCharacteristic;
  * </p>
  *
  * @see CPSM.Wires.WiresPackage#getEnergyConsumer()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='Generic user of energy - a  point of consumption on the power system model'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='Generic user of energy - a  point of consumption on the power system model'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='Generic user of energy - a  point of consumption on the power system model'"
  * @generated
  */

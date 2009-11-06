@@ -38,7 +38,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class EnergyConsumerImpl extends ConductingEquipmentImpl implements EnergyConsumer {
+public abstract class EnergyConsumerImpl extends ConductingEquipmentImpl implements EnergyConsumer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

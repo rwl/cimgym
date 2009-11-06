@@ -537,13 +537,13 @@ public class MeasPackageImpl extends EPackageImpl implements MeasPackage {
 		initEClass(discreteValueEClass, DiscreteValue.class, "DiscreteValue", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDiscreteValue_MemberOf_Measurement(), this.getDiscrete(), this.getDiscrete_Contain_MeasurementValues(), "MemberOf_Measurement", null, 1, 1, DiscreteValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(measurementEClass, Measurement.class, "Measurement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(measurementEClass, Measurement.class, "Measurement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMeasurement_MemberOf_PSR(), theCorePackage.getPowerSystemResource(), theCorePackage.getPowerSystemResource_Contains_Measurements(), "MemberOf_PSR", null, 1, 1, Measurement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMeasurement_MeasurementType(), this.getMeasurementType(), this.getMeasurementType_Measurements(), "MeasurementType", null, 1, 1, Measurement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMeasurement_Terminal(), theCorePackage.getTerminal(), theCorePackage.getTerminal_Measurements(), "Terminal", null, 1, 1, Measurement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMeasurement_Unit(), theCorePackage.getUnit(), theCorePackage.getUnit_Measurements(), "Unit", null, 1, 1, Measurement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(measurementValueEClass, MeasurementValue.class, "MeasurementValue", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(measurementValueEClass, MeasurementValue.class, "MeasurementValue", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMeasurementValue_MeasurementValueSource(), this.getMeasurementValueSource(), this.getMeasurementValueSource_MeasurementValues(), "MeasurementValueSource", null, 1, 1, MeasurementValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(measurementValueSourceEClass, MeasurementValueSource.class, "MeasurementValueSource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

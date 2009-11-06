@@ -32,15 +32,6 @@ public interface CPSMFactory extends EFactory {
 	CPSMFactory eINSTANCE = CPSM.impl.CPSMFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Element</em>'.
-	 * @generated
-	 */
-	Element createElement();
-
-	/**
 	 * Returns a new object of class '<em>IEC61970CIM Version</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,13 +41,13 @@ public interface CPSMFactory extends EFactory {
 	IEC61970CIMVersion createIEC61970CIMVersion();
 
 	/**
-	 * Returns a new object of class '<em>Model</em>'.
+	 * Returns a new object of class '<em>Common Power System Model</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Model</em>'.
+	 * @return a new object of class '<em>Common Power System Model</em>'.
 	 * @generated
 	 */
-	Model createModel();
+	CommonPowerSystemModel createCommonPowerSystemModel();
 
 	/**
 	 * Returns the package supported by this factory.

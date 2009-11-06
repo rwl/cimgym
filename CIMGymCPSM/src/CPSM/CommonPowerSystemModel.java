@@ -11,21 +11,21 @@ import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Model</b></em>'.
+ * A representation of the model object '<em><b>Common Power System Model</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link CPSM.Model#getElements <em>Elements</em>}</li>
+ *   <li>{@link CPSM.CommonPowerSystemModel#getElements <em>Elements</em>}</li>
  * </ul>
  * </p>
  *
- * @see CPSM.CPSMPackage#getModel()
+ * @see CPSM.CPSMPackage#getCommonPowerSystemModel()
  * @model
  * @generated
  */
-public interface Model extends EObject {
+public interface CommonPowerSystemModel extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -44,11 +44,11 @@ public interface Model extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Elements</em>' containment reference list.
-	 * @see CPSM.CPSMPackage#getModel_Elements()
+	 * @see CPSM.CPSMPackage#getCommonPowerSystemModel_Elements()
 	 * @see CPSM.Element#getModel
 	 * @model opposite="Model" containment="true"
 	 * @generated
 	 */
 	EList<Element> getElements();
 
-} // Model
+} // CommonPowerSystemModel

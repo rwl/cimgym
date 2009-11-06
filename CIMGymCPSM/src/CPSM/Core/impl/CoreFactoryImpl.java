@@ -67,25 +67,16 @@ public class CoreFactoryImpl extends EFactoryImpl implements CoreFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case CorePackage.IDENTIFIED_OBJECT: return createIdentifiedObject();
 			case CorePackage.TERMINAL: return createTerminal();
 			case CorePackage.BASE_VOLTAGE: return createBaseVoltage();
-			case CorePackage.REGULAR_INTERVAL_SCHEDULE: return createRegularIntervalSchedule();
-			case CorePackage.CONNECTIVITY_NODE_CONTAINER: return createConnectivityNodeContainer();
 			case CorePackage.UNIT: return createUnit();
-			case CorePackage.EQUIPMENT_CONTAINER: return createEquipmentContainer();
 			case CorePackage.VOLTAGE_LEVEL: return createVoltageLevel();
 			case CorePackage.BAY: return createBay();
 			case CorePackage.SUB_GEOGRAPHICAL_REGION: return createSubGeographicalRegion();
 			case CorePackage.REGULAR_TIME_POINT: return createRegularTimePoint();
-			case CorePackage.EQUIPMENT: return createEquipment();
 			case CorePackage.SUBSTATION: return createSubstation();
-			case CorePackage.CURVE: return createCurve();
-			case CorePackage.POWER_SYSTEM_RESOURCE: return createPowerSystemResource();
-			case CorePackage.BASIC_INTERVAL_SCHEDULE: return createBasicIntervalSchedule();
 			case CorePackage.CURVE_DATA: return createCurveData();
 			case CorePackage.GEOGRAPHICAL_REGION: return createGeographicalRegion();
-			case CorePackage.CONDUCTING_EQUIPMENT: return createConductingEquipment();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -126,16 +117,6 @@ public class CoreFactoryImpl extends EFactoryImpl implements CoreFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IdentifiedObject createIdentifiedObject() {
-		IdentifiedObjectImpl identifiedObject = new IdentifiedObjectImpl();
-		return identifiedObject;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Terminal createTerminal() {
 		TerminalImpl terminal = new TerminalImpl();
 		return terminal;
@@ -156,39 +137,9 @@ public class CoreFactoryImpl extends EFactoryImpl implements CoreFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RegularIntervalSchedule createRegularIntervalSchedule() {
-		RegularIntervalScheduleImpl regularIntervalSchedule = new RegularIntervalScheduleImpl();
-		return regularIntervalSchedule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ConnectivityNodeContainer createConnectivityNodeContainer() {
-		ConnectivityNodeContainerImpl connectivityNodeContainer = new ConnectivityNodeContainerImpl();
-		return connectivityNodeContainer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Unit createUnit() {
 		UnitImpl unit = new UnitImpl();
 		return unit;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EquipmentContainer createEquipmentContainer() {
-		EquipmentContainerImpl equipmentContainer = new EquipmentContainerImpl();
-		return equipmentContainer;
 	}
 
 	/**
@@ -236,49 +187,9 @@ public class CoreFactoryImpl extends EFactoryImpl implements CoreFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Equipment createEquipment() {
-		EquipmentImpl equipment = new EquipmentImpl();
-		return equipment;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Substation createSubstation() {
 		SubstationImpl substation = new SubstationImpl();
 		return substation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Curve createCurve() {
-		CurveImpl curve = new CurveImpl();
-		return curve;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PowerSystemResource createPowerSystemResource() {
-		PowerSystemResourceImpl powerSystemResource = new PowerSystemResourceImpl();
-		return powerSystemResource;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public BasicIntervalSchedule createBasicIntervalSchedule() {
-		BasicIntervalScheduleImpl basicIntervalSchedule = new BasicIntervalScheduleImpl();
-		return basicIntervalSchedule;
 	}
 
 	/**
@@ -299,16 +210,6 @@ public class CoreFactoryImpl extends EFactoryImpl implements CoreFactory {
 	public GeographicalRegion createGeographicalRegion() {
 		GeographicalRegionImpl geographicalRegion = new GeographicalRegionImpl();
 		return geographicalRegion;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ConductingEquipment createConductingEquipment() {
-		ConductingEquipmentImpl conductingEquipment = new ConductingEquipmentImpl();
-		return conductingEquipment;
 	}
 
 	/**

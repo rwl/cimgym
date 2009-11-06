@@ -20,7 +20,8 @@ import CPSM.Core.IdentifiedObject;
  * </p>
  *
  * @see CPSM.LoadModel.LoadModelPackage#getLoadGroup()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The class is the third level in a hierarchical structure for grouping of loads for the purpose of load flow load scaling.'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The class is the third level in a hierarchical structure for grouping of loads for the purpose of load flow load scaling.'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='The class is the third level in a hierarchical structure for grouping of loads for the purpose of load flow load scaling.'"
  * @generated
  */

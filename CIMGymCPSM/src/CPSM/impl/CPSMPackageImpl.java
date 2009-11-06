@@ -7,6 +7,7 @@ package CPSM.impl;
 
 import CPSM.CPSMFactory;
 import CPSM.CPSMPackage;
+import CPSM.CommonPowerSystemModel;
 
 import CPSM.ControlArea.ControlAreaPackage;
 
@@ -40,7 +41,6 @@ import CPSM.Meas.MeasPackage;
 
 import CPSM.Meas.impl.MeasPackageImpl;
 
-import CPSM.Model;
 import CPSM.OperationalLimits.OperationalLimitsPackage;
 
 import CPSM.OperationalLimits.impl.OperationalLimitsPackageImpl;
@@ -56,8 +56,8 @@ import CPSM.Wires.impl.WiresPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.EReference;
+
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -93,7 +93,7 @@ public class CPSMPackageImpl extends EPackageImpl implements CPSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass modelEClass = null;
+	private EClass commonPowerSystemModelEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -247,8 +247,8 @@ public class CPSMPackageImpl extends EPackageImpl implements CPSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getModel() {
-		return modelEClass;
+	public EClass getCommonPowerSystemModel() {
+		return commonPowerSystemModelEClass;
 	}
 
 	/**
@@ -256,8 +256,8 @@ public class CPSMPackageImpl extends EPackageImpl implements CPSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getModel_Elements() {
-		return (EReference)modelEClass.getEStructuralFeatures().get(0);
+	public EReference getCommonPowerSystemModel_Elements() {
+		return (EReference)commonPowerSystemModelEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -296,8 +296,8 @@ public class CPSMPackageImpl extends EPackageImpl implements CPSMPackage {
 		createEAttribute(iec61970CIMVersionEClass, IEC61970CIM_VERSION__VERSION);
 		createEAttribute(iec61970CIMVersionEClass, IEC61970CIM_VERSION__DATE);
 
-		modelEClass = createEClass(MODEL);
-		createEReference(modelEClass, MODEL__ELEMENTS);
+		commonPowerSystemModelEClass = createEClass(COMMON_POWER_SYSTEM_MODEL);
+		createEReference(commonPowerSystemModelEClass, COMMON_POWER_SYSTEM_MODEL__ELEMENTS);
 	}
 
 	/**
@@ -355,16 +355,16 @@ public class CPSMPackageImpl extends EPackageImpl implements CPSMPackage {
 		iec61970CIMVersionEClass.getESuperTypes().add(this.getElement());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(elementEClass, Element.class, "Element", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(elementEClass, Element.class, "Element", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getElement_URI(), ecorePackage.getEString(), "URI", null, 0, 1, Element.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getElement_Model(), this.getModel(), this.getModel_Elements(), "Model", null, 1, 1, Element.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getElement_Model(), this.getCommonPowerSystemModel(), this.getCommonPowerSystemModel_Elements(), "Model", null, 1, 1, Element.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(iec61970CIMVersionEClass, IEC61970CIMVersion.class, "IEC61970CIMVersion", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getIEC61970CIMVersion_Version(), ecorePackage.getEString(), "version", null, 1, 1, IEC61970CIMVersion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getIEC61970CIMVersion_Date(), ecorePackage.getEDate(), "date", null, 1, 1, IEC61970CIMVersion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getModel_Elements(), this.getElement(), this.getElement_Model(), "Elements", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(commonPowerSystemModelEClass, CommonPowerSystemModel.class, "CommonPowerSystemModel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getCommonPowerSystemModel_Elements(), this.getElement(), this.getElement_Model(), "Elements", null, 0, -1, CommonPowerSystemModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

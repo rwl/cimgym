@@ -21,7 +21,8 @@ import CPSM.Core.IdentifiedObject;
  * </p>
  *
  * @see CPSM.OperationalLimits.OperationalLimitsPackage#getOperationalLimit()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='A value associated with a specific kind of limit.'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='A value associated with a specific kind of limit.'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='A value associated with a specific kind of limit.'"
  * @generated
  */

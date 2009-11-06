@@ -24,7 +24,8 @@ import java.util.Date;
  * </p>
  *
  * @see CPSM.Core.CorePackage#getBasicIntervalSchedule()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='Schedule of values at points in time.'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='Schedule of values at points in time.'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='Schedule of values at points in time.'"
  * @generated
  */

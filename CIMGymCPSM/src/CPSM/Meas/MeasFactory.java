@@ -41,24 +41,6 @@ public interface MeasFactory extends EFactory {
 	DiscreteValue createDiscreteValue();
 
 	/**
-	 * Returns a new object of class '<em>Measurement</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Measurement</em>'.
-	 * @generated
-	 */
-	Measurement createMeasurement();
-
-	/**
-	 * Returns a new object of class '<em>Measurement Value</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Measurement Value</em>'.
-	 * @generated
-	 */
-	MeasurementValue createMeasurementValue();
-
-	/**
 	 * Returns a new object of class '<em>Measurement Value Source</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

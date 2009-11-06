@@ -1130,7 +1130,7 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		conductingEquipmentEClass.getESuperTypes().add(this.getEquipment());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(identifiedObjectEClass, IdentifiedObject.class, "IdentifiedObject", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(identifiedObjectEClass, IdentifiedObject.class, "IdentifiedObject", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getIdentifiedObject_PathName(), ecorePackage.getEString(), "pathName", null, 1, 1, IdentifiedObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getIdentifiedObject_Description(), ecorePackage.getEString(), "description", null, 1, 1, IdentifiedObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getIdentifiedObject_AliasName(), ecorePackage.getEString(), "aliasName", null, 1, 1, IdentifiedObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1147,18 +1147,18 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		initEReference(getBaseVoltage_ConductingEquipment(), this.getConductingEquipment(), this.getConductingEquipment_BaseVoltage(), "ConductingEquipment", null, 0, -1, BaseVoltage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getBaseVoltage_VoltageLevel(), this.getVoltageLevel(), this.getVoltageLevel_BaseVoltage(), "VoltageLevel", null, 0, -1, BaseVoltage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(regularIntervalScheduleEClass, RegularIntervalSchedule.class, "RegularIntervalSchedule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(regularIntervalScheduleEClass, RegularIntervalSchedule.class, "RegularIntervalSchedule", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRegularIntervalSchedule_EndTime(), ecorePackage.getEDate(), "endTime", null, 1, 1, RegularIntervalSchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRegularIntervalSchedule_TimePoints(), this.getRegularTimePoint(), this.getRegularTimePoint_IntervalSchedule(), "TimePoints", null, 0, -1, RegularIntervalSchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRegularIntervalSchedule_TimeStep(), theDomainPackage.getSeconds(), "timeStep", null, 1, 1, RegularIntervalSchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(connectivityNodeContainerEClass, ConnectivityNodeContainer.class, "ConnectivityNodeContainer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(connectivityNodeContainerEClass, ConnectivityNodeContainer.class, "ConnectivityNodeContainer", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getConnectivityNodeContainer_ConnectivityNodes(), theTopologyPackage.getConnectivityNode(), theTopologyPackage.getConnectivityNode_MemberOf_EquipmentContainer(), "ConnectivityNodes", null, 0, -1, ConnectivityNodeContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(unitEClass, Unit.class, "Unit", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getUnit_Measurements(), theMeasPackage.getMeasurement(), theMeasPackage.getMeasurement_Unit(), "Measurements", null, 0, -1, Unit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(equipmentContainerEClass, EquipmentContainer.class, "EquipmentContainer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(equipmentContainerEClass, EquipmentContainer.class, "EquipmentContainer", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEquipmentContainer_Contains_Equipments(), this.getEquipment(), this.getEquipment_MemberOf_EquipmentContainer(), "Contains_Equipments", null, 0, -1, EquipmentContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(voltageLevelEClass, VoltageLevel.class, "VoltageLevel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1182,7 +1182,7 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		initEAttribute(getRegularTimePoint_Value2(), ecorePackage.getEFloat(), "value2", null, 1, 1, RegularTimePoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRegularTimePoint_IntervalSchedule(), this.getRegularIntervalSchedule(), this.getRegularIntervalSchedule_TimePoints(), "IntervalSchedule", null, 1, 1, RegularTimePoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(equipmentEClass, Equipment.class, "Equipment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(equipmentEClass, Equipment.class, "Equipment", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEquipment_MemberOf_EquipmentContainer(), this.getEquipmentContainer(), this.getEquipmentContainer_Contains_Equipments(), "MemberOf_EquipmentContainer", null, 1, 1, Equipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEquipment_OperationalLimitSet(), theOperationalLimitsPackage.getOperationalLimitSet(), theOperationalLimitsPackage.getOperationalLimitSet_Equipment(), "OperationalLimitSet", null, 0, -1, Equipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1190,17 +1190,17 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		initEReference(getSubstation_Region(), this.getSubGeographicalRegion(), this.getSubGeographicalRegion_Substations(), "Region", null, 1, 1, Substation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSubstation_Contains_VoltageLevels(), this.getVoltageLevel(), this.getVoltageLevel_MemberOf_Substation(), "Contains_VoltageLevels", null, 0, -1, Substation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(curveEClass, Curve.class, "Curve", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(curveEClass, Curve.class, "Curve", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCurve_Y2Unit(), theDomainPackage.getUnitSymbol(), "y2Unit", null, 0, 1, Curve.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCurve_XUnit(), theDomainPackage.getUnitSymbol(), "xUnit", null, 1, 1, Curve.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCurve_CurveScheduleDatas(), this.getCurveData(), this.getCurveData_CurveSchedule(), "CurveScheduleDatas", null, 0, -1, Curve.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCurve_CurveStyle(), this.getCurveStyle(), "curveStyle", null, 1, 1, Curve.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCurve_Y1Unit(), theDomainPackage.getUnitSymbol(), "y1Unit", null, 1, 1, Curve.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(powerSystemResourceEClass, PowerSystemResource.class, "PowerSystemResource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(powerSystemResourceEClass, PowerSystemResource.class, "PowerSystemResource", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPowerSystemResource_Contains_Measurements(), theMeasPackage.getMeasurement(), theMeasPackage.getMeasurement_MemberOf_PSR(), "Contains_Measurements", null, 0, -1, PowerSystemResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(basicIntervalScheduleEClass, BasicIntervalSchedule.class, "BasicIntervalSchedule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(basicIntervalScheduleEClass, BasicIntervalSchedule.class, "BasicIntervalSchedule", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getBasicIntervalSchedule_StartTime(), ecorePackage.getEDate(), "startTime", null, 1, 1, BasicIntervalSchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBasicIntervalSchedule_Value1Unit(), theDomainPackage.getUnitSymbol(), "value1Unit", null, 1, 1, BasicIntervalSchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBasicIntervalSchedule_Value2Unit(), theDomainPackage.getUnitSymbol(), "value2Unit", null, 1, 1, BasicIntervalSchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1214,7 +1214,7 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		initEClass(geographicalRegionEClass, GeographicalRegion.class, "GeographicalRegion", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGeographicalRegion_Regions(), this.getSubGeographicalRegion(), this.getSubGeographicalRegion_Region(), "Regions", null, 0, -1, GeographicalRegion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(conductingEquipmentEClass, ConductingEquipment.class, "ConductingEquipment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(conductingEquipmentEClass, ConductingEquipment.class, "ConductingEquipment", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getConductingEquipment_BaseVoltage(), this.getBaseVoltage(), this.getBaseVoltage_ConductingEquipment(), "BaseVoltage", null, 1, 1, ConductingEquipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getConductingEquipment_Terminals(), this.getTerminal(), this.getTerminal_ConductingEquipment(), "Terminals", null, 0, -1, ConductingEquipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

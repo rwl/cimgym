@@ -21,7 +21,8 @@ import CPSM.Core.RegularIntervalSchedule;
  * </p>
  *
  * @see CPSM.LoadModel.LoadModelPackage#getSeasonDayTypeSchedule()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The schedule specialize RegularIntervalSchedule with type curve data for a specific type of day and season. This means that curves of this type cover a 24 hour period.'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The schedule specialize RegularIntervalSchedule with type curve data for a specific type of day and season. This means that curves of this type cover a 24 hour period.'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='The schedule specialize RegularIntervalSchedule with type curve data for a specific type of day and season. This means that curves of this type cover a 24 hour period.'"
  * @generated
  */

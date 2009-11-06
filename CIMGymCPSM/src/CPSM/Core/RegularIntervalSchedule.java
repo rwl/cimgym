@@ -24,7 +24,8 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see CPSM.Core.CorePackage#getRegularIntervalSchedule()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The schedule has TimePoints where the time between them is constant.'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The schedule has TimePoints where the time between them is constant.'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='The schedule has TimePoints where the time between them is constant.'"
  * @generated
  */

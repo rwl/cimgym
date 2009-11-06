@@ -41,7 +41,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class EquipmentImpl extends PowerSystemResourceImpl implements Equipment {
+public abstract class EquipmentImpl extends PowerSystemResourceImpl implements Equipment {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

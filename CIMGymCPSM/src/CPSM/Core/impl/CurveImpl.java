@@ -44,7 +44,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class CurveImpl extends IdentifiedObjectImpl implements Curve {
+public abstract class CurveImpl extends IdentifiedObjectImpl implements Curve {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

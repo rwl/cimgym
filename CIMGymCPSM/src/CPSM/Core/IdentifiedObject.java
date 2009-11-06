@@ -23,7 +23,8 @@ import CPSM.Element;
  * </p>
  *
  * @see CPSM.Core.CorePackage#getIdentifiedObject()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='This is a root class to provide common naming attributes for all classes needing naming attributes'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='This is a root class to provide common naming attributes for all classes needing naming attributes'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='This is a root class to provide common naming attributes for all classes needing naming attributes'"
  * @generated
  */

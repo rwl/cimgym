@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class OperationalLimitImpl extends IdentifiedObjectImpl implements OperationalLimit {
+public abstract class OperationalLimitImpl extends IdentifiedObjectImpl implements OperationalLimit {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

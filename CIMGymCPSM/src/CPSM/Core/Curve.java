@@ -26,7 +26,8 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see CPSM.Core.CorePackage#getCurve()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='Relationship between an independent variable (X-axis) and one or two dependent \nvariables (Y1-axis and Y2-axis). Curves can also serve as schedules.'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='Relationship between an independent variable (X-axis) and one or two dependent \nvariables (Y1-axis and Y2-axis). Curves can also serve as schedules.'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='Relationship between an independent variable (X-axis) and one or two dependent \nvariables (Y1-axis and Y2-axis). Curves can also serve as schedules.'"
  * @generated
  */

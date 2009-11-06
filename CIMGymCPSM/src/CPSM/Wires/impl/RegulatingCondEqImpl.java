@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class RegulatingCondEqImpl extends ConductingEquipmentImpl implements RegulatingCondEq {
+public abstract class RegulatingCondEqImpl extends ConductingEquipmentImpl implements RegulatingCondEq {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

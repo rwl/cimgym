@@ -36,7 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ConnectivityNodeContainerImpl extends PowerSystemResourceImpl implements ConnectivityNodeContainer {
+public abstract class ConnectivityNodeContainerImpl extends PowerSystemResourceImpl implements ConnectivityNodeContainer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

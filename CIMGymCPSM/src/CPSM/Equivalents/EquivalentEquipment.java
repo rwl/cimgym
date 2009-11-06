@@ -20,7 +20,8 @@ import CPSM.Core.ConductingEquipment;
  * </p>
  *
  * @see CPSM.Equivalents.EquivalentsPackage#getEquivalentEquipment()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The class represents equivalent objects that are the result of a network reduction. The class is the base for equivalent objects of diferent types.'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The class represents equivalent objects that are the result of a network reduction. The class is the base for equivalent objects of diferent types.'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='The class represents equivalent objects that are the result of a network reduction. The class is the base for equivalent objects of diferent types.'"
  * @generated
  */

@@ -40,7 +40,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class RegularIntervalScheduleImpl extends BasicIntervalScheduleImpl implements RegularIntervalSchedule {
+public abstract class RegularIntervalScheduleImpl extends BasicIntervalScheduleImpl implements RegularIntervalSchedule {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

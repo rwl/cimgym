@@ -6,17 +6,18 @@
 package CPSM.impl;
 
 import CPSM.CPSMPackage;
+import CPSM.CommonPowerSystemModel;
 import CPSM.Element;
 
-import CPSM.Model;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.notify.NotificationChain;
-import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
+
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
 /**
@@ -33,7 +34,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  *
  * @generated
  */
-public class ElementImpl extends EObjectImpl implements Element {
+public abstract class ElementImpl extends EObjectImpl implements Element {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -106,9 +107,9 @@ public class ElementImpl extends EObjectImpl implements Element {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Model getModel() {
+	public CommonPowerSystemModel getModel() {
 		if (eContainerFeatureID() != CPSMPackage.ELEMENT__MODEL) return null;
-		return (Model)eContainer();
+		return (CommonPowerSystemModel)eContainer();
 	}
 
 	/**
@@ -116,7 +117,7 @@ public class ElementImpl extends EObjectImpl implements Element {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetModel(Model newModel, NotificationChain msgs) {
+	public NotificationChain basicSetModel(CommonPowerSystemModel newModel, NotificationChain msgs) {
 		msgs = eBasicSetContainer((InternalEObject)newModel, CPSMPackage.ELEMENT__MODEL, msgs);
 		return msgs;
 	}
@@ -126,7 +127,7 @@ public class ElementImpl extends EObjectImpl implements Element {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setModel(Model newModel) {
+	public void setModel(CommonPowerSystemModel newModel) {
 		if (newModel != eInternalContainer() || (eContainerFeatureID() != CPSMPackage.ELEMENT__MODEL && newModel != null)) {
 			if (EcoreUtil.isAncestor(this, newModel))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
@@ -134,7 +135,7 @@ public class ElementImpl extends EObjectImpl implements Element {
 			if (eInternalContainer() != null)
 				msgs = eBasicRemoveFromContainer(msgs);
 			if (newModel != null)
-				msgs = ((InternalEObject)newModel).eInverseAdd(this, CPSMPackage.MODEL__ELEMENTS, Model.class, msgs);
+				msgs = ((InternalEObject)newModel).eInverseAdd(this, CPSMPackage.COMMON_POWER_SYSTEM_MODEL__ELEMENTS, CommonPowerSystemModel.class, msgs);
 			msgs = basicSetModel(newModel, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
@@ -153,7 +154,7 @@ public class ElementImpl extends EObjectImpl implements Element {
 			case CPSMPackage.ELEMENT__MODEL:
 				if (eInternalContainer() != null)
 					msgs = eBasicRemoveFromContainer(msgs);
-				return basicSetModel((Model)otherEnd, msgs);
+				return basicSetModel((CommonPowerSystemModel)otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -181,7 +182,7 @@ public class ElementImpl extends EObjectImpl implements Element {
 	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
 		switch (eContainerFeatureID()) {
 			case CPSMPackage.ELEMENT__MODEL:
-				return eInternalContainer().eInverseRemove(this, CPSMPackage.MODEL__ELEMENTS, Model.class, msgs);
+				return eInternalContainer().eInverseRemove(this, CPSMPackage.COMMON_POWER_SYSTEM_MODEL__ELEMENTS, CommonPowerSystemModel.class, msgs);
 		}
 		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
@@ -214,7 +215,7 @@ public class ElementImpl extends EObjectImpl implements Element {
 				setURI((String)newValue);
 				return;
 			case CPSMPackage.ELEMENT__MODEL:
-				setModel((Model)newValue);
+				setModel((CommonPowerSystemModel)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -232,7 +233,7 @@ public class ElementImpl extends EObjectImpl implements Element {
 				setURI(URI_EDEFAULT);
 				return;
 			case CPSMPackage.ELEMENT__MODEL:
-				setModel((Model)null);
+				setModel((CommonPowerSystemModel)null);
 				return;
 		}
 		super.eUnset(featureID);

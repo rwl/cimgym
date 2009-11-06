@@ -73,14 +73,11 @@ public class WiresFactoryImpl extends EFactoryImpl implements WiresFactory {
 			case WiresPackage.BUSBAR_SECTION: return createBusbarSection();
 			case WiresPackage.SHUNT_COMPENSATOR: return createShuntCompensator();
 			case WiresPackage.LOAD_BREAK_SWITCH: return createLoadBreakSwitch();
-			case WiresPackage.REGULATING_COND_EQ: return createRegulatingCondEq();
-			case WiresPackage.ENERGY_CONSUMER: return createEnergyConsumer();
 			case WiresPackage.TRANSFORMER_WINDING: return createTransformerWinding();
 			case WiresPackage.REGULATING_CONTROL: return createRegulatingControl();
 			case WiresPackage.REGULATION_SCHEDULE: return createRegulationSchedule();
 			case WiresPackage.AC_LINE_SEGMENT: return createACLineSegment();
 			case WiresPackage.SWITCH: return createSwitch();
-			case WiresPackage.CONDUCTOR: return createConductor();
 			case WiresPackage.REACTIVE_CAPABILITY_CURVE: return createReactiveCapabilityCurve();
 			case WiresPackage.TAP_CHANGER: return createTapChanger();
 			case WiresPackage.LINE: return createLine();
@@ -207,26 +204,6 @@ public class WiresFactoryImpl extends EFactoryImpl implements WiresFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RegulatingCondEq createRegulatingCondEq() {
-		RegulatingCondEqImpl regulatingCondEq = new RegulatingCondEqImpl();
-		return regulatingCondEq;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EnergyConsumer createEnergyConsumer() {
-		EnergyConsumerImpl energyConsumer = new EnergyConsumerImpl();
-		return energyConsumer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public TransformerWinding createTransformerWinding() {
 		TransformerWindingImpl transformerWinding = new TransformerWindingImpl();
 		return transformerWinding;
@@ -270,16 +247,6 @@ public class WiresFactoryImpl extends EFactoryImpl implements WiresFactory {
 	public Switch createSwitch() {
 		SwitchImpl switch_ = new SwitchImpl();
 		return switch_;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Conductor createConductor() {
-		ConductorImpl conductor = new ConductorImpl();
-		return conductor;
 	}
 
 	/**

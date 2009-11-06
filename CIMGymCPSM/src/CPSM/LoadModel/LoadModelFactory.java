@@ -104,33 +104,6 @@ public interface LoadModelFactory extends EFactory {
 	StationSupply createStationSupply();
 
 	/**
-	 * Returns a new object of class '<em>Season Day Type Schedule</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Season Day Type Schedule</em>'.
-	 * @generated
-	 */
-	SeasonDayTypeSchedule createSeasonDayTypeSchedule();
-
-	/**
-	 * Returns a new object of class '<em>Load Group</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Group</em>'.
-	 * @generated
-	 */
-	LoadGroup createLoadGroup();
-
-	/**
-	 * Returns a new object of class '<em>Energy Area</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Energy Area</em>'.
-	 * @generated
-	 */
-	EnergyArea createEnergyArea();
-
-	/**
 	 * Returns a new object of class '<em>Conform Load Group</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

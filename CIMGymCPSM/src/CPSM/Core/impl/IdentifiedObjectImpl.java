@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class IdentifiedObjectImpl extends ElementImpl implements IdentifiedObject {
+public abstract class IdentifiedObjectImpl extends ElementImpl implements IdentifiedObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

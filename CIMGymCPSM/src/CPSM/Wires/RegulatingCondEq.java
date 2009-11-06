@@ -20,7 +20,8 @@ import CPSM.Core.ConductingEquipment;
  * </p>
  *
  * @see CPSM.Wires.WiresPackage#getRegulatingCondEq()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='RegulatingCondEq is a type of ConductingEquipment that can regulate Measurements and have a RegulationSchedule.'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='RegulatingCondEq is a type of ConductingEquipment that can regulate Measurements and have a RegulationSchedule.'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='RegulatingCondEq is a type of ConductingEquipment that can regulate Measurements and have a RegulationSchedule.'"
  * @generated
  */

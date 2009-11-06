@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class SeasonDayTypeScheduleImpl extends RegularIntervalScheduleImpl implements SeasonDayTypeSchedule {
+public abstract class SeasonDayTypeScheduleImpl extends RegularIntervalScheduleImpl implements SeasonDayTypeSchedule {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

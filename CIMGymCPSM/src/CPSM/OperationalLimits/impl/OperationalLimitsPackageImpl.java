@@ -425,7 +425,7 @@ public class OperationalLimitsPackageImpl extends EPackageImpl implements Operat
 		currentLimitEClass.getESuperTypes().add(this.getOperationalLimit());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(operationalLimitEClass, OperationalLimit.class, "OperationalLimit", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(operationalLimitEClass, OperationalLimit.class, "OperationalLimit", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getOperationalLimit_OperationalLimitSet(), this.getOperationalLimitSet(), this.getOperationalLimitSet_OperationalLimitValue(), "OperationalLimitSet", null, 1, 1, OperationalLimit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOperationalLimit_Type(), ecorePackage.getEString(), "type", null, 1, 1, OperationalLimit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

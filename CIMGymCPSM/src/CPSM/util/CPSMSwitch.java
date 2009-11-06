@@ -106,9 +106,9 @@ public class CPSMSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case CPSMPackage.MODEL: {
-				Model model = (Model)theEObject;
-				T result = caseModel(model);
+			case CPSMPackage.COMMON_POWER_SYSTEM_MODEL: {
+				CommonPowerSystemModel commonPowerSystemModel = (CommonPowerSystemModel)theEObject;
+				T result = caseCommonPowerSystemModel(commonPowerSystemModel);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -147,17 +147,17 @@ public class CPSMSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Model</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Common Power System Model</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Model</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Common Power System Model</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseModel(Model object) {
+	public T caseCommonPowerSystemModel(CommonPowerSystemModel object) {
 		return null;
 	}
 

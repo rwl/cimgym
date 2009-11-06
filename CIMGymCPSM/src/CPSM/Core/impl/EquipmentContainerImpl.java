@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class EquipmentContainerImpl extends ConnectivityNodeContainerImpl implements EquipmentContainer {
+public abstract class EquipmentContainerImpl extends ConnectivityNodeContainerImpl implements EquipmentContainer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

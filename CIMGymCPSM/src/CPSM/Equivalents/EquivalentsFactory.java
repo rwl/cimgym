@@ -50,15 +50,6 @@ public interface EquivalentsFactory extends EFactory {
 	EquivalentShunt createEquivalentShunt();
 
 	/**
-	 * Returns a new object of class '<em>Equivalent Equipment</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Equivalent Equipment</em>'.
-	 * @generated
-	 */
-	EquivalentEquipment createEquivalentEquipment();
-
-	/**
 	 * Returns a new object of class '<em>Equivalent Branch</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

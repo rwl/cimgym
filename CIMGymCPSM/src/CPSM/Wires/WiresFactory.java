@@ -86,24 +86,6 @@ public interface WiresFactory extends EFactory {
 	LoadBreakSwitch createLoadBreakSwitch();
 
 	/**
-	 * Returns a new object of class '<em>Regulating Cond Eq</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Regulating Cond Eq</em>'.
-	 * @generated
-	 */
-	RegulatingCondEq createRegulatingCondEq();
-
-	/**
-	 * Returns a new object of class '<em>Energy Consumer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Energy Consumer</em>'.
-	 * @generated
-	 */
-	EnergyConsumer createEnergyConsumer();
-
-	/**
 	 * Returns a new object of class '<em>Transformer Winding</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -147,15 +129,6 @@ public interface WiresFactory extends EFactory {
 	 * @generated
 	 */
 	Switch createSwitch();
-
-	/**
-	 * Returns a new object of class '<em>Conductor</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Conductor</em>'.
-	 * @generated
-	 */
-	Conductor createConductor();
 
 	/**
 	 * Returns a new object of class '<em>Reactive Capability Curve</em>'.

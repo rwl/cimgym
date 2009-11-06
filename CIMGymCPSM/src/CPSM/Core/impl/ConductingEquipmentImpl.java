@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ConductingEquipmentImpl extends EquipmentImpl implements ConductingEquipment {
+public abstract class ConductingEquipmentImpl extends EquipmentImpl implements ConductingEquipment {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

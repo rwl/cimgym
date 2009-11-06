@@ -23,7 +23,8 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see CPSM.Core.CorePackage#getEquipment()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The parts of a power system that are physical devices, electronic or mechanical'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The parts of a power system that are physical devices, electronic or mechanical'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='The parts of a power system that are physical devices, electronic or mechanical'"
  * @generated
  */

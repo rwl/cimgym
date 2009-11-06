@@ -66,7 +66,6 @@ public class OperationalLimitsFactoryImpl extends EFactoryImpl implements Operat
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case OperationalLimitsPackage.OPERATIONAL_LIMIT: return createOperationalLimit();
 			case OperationalLimitsPackage.OPERATIONAL_LIMIT_SET: return createOperationalLimitSet();
 			case OperationalLimitsPackage.ACTIVE_POWER_LIMIT: return createActivePowerLimit();
 			case OperationalLimitsPackage.APPARENT_POWER_LIMIT: return createApparentPowerLimit();
@@ -75,16 +74,6 @@ public class OperationalLimitsFactoryImpl extends EFactoryImpl implements Operat
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public OperationalLimit createOperationalLimit() {
-		OperationalLimitImpl operationalLimit = new OperationalLimitImpl();
-		return operationalLimit;
 	}
 
 	/**

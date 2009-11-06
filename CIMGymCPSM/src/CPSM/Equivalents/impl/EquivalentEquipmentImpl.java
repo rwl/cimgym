@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class EquivalentEquipmentImpl extends ConductingEquipmentImpl implements EquivalentEquipment {
+public abstract class EquivalentEquipmentImpl extends ConductingEquipmentImpl implements EquivalentEquipment {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

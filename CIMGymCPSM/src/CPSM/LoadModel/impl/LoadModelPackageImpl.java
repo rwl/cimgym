@@ -883,14 +883,14 @@ public class LoadModelPackageImpl extends EPackageImpl implements LoadModelPacka
 
 		initEClass(stationSupplyEClass, StationSupply.class, "StationSupply", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(seasonDayTypeScheduleEClass, SeasonDayTypeSchedule.class, "SeasonDayTypeSchedule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(seasonDayTypeScheduleEClass, SeasonDayTypeSchedule.class, "SeasonDayTypeSchedule", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSeasonDayTypeSchedule_DayType(), this.getDayType(), this.getDayType_SeasonDayTypeSchedules(), "DayType", null, 1, 1, SeasonDayTypeSchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSeasonDayTypeSchedule_Season(), this.getSeason(), this.getSeason_SeasonDayTypeSchedules(), "Season", null, 1, 1, SeasonDayTypeSchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(loadGroupEClass, LoadGroup.class, "LoadGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(loadGroupEClass, LoadGroup.class, "LoadGroup", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getLoadGroup_SubLoadArea(), this.getSubLoadArea(), this.getSubLoadArea_LoadGroups(), "SubLoadArea", null, 1, 1, LoadGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(energyAreaEClass, EnergyArea.class, "EnergyArea", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(energyAreaEClass, EnergyArea.class, "EnergyArea", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEnergyArea_ControlArea(), theControlAreaPackage.getControlArea(), theControlAreaPackage.getControlArea_EnergyArea(), "ControlArea", null, 0, 1, EnergyArea.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(conformLoadGroupEClass, ConformLoadGroup.class, "ConformLoadGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

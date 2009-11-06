@@ -9,11 +9,11 @@
   <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
     <details key="Documentation" value="An extension to the Core and Wires packages that models information on the current and planned network configuration. These entities are optional within typical network applications."/>
   </eAnnotations>
-  <eClassifiers xsi:type="ecore:EClass" name="Element">
+  <eClassifiers xsi:type="ecore:EClass" name="Element" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="URI" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         iD="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Model" lowerBound="1" eType="#//CPSM"
-        eOpposite="#//CPSM/Elements"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Model" lowerBound="1" eType="#//CommonPowerSystemModel"
+        eOpposite="#//CommonPowerSystemModel/Elements"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="IEC61970CIMVersion" eSuperTypes="#//Element">
     <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
@@ -26,7 +26,7 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="date" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CPSM">
+  <eClassifiers xsi:type="ecore:EClass" name="CommonPowerSystemModel">
     <eStructuralFeatures xsi:type="ecore:EReference" name="Elements" upperBound="-1"
         eType="#//Element" containment="true" eOpposite="#//Element/Model"/>
   </eClassifiers>
@@ -232,7 +232,8 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="Documentation" value="The specificatoin of limits associated with equipment and other operational entities."/>
     </eAnnotations>
-    <eClassifiers xsi:type="ecore:EClass" name="OperationalLimit" eSuperTypes="#//Core/IdentifiedObject">
+    <eClassifiers xsi:type="ecore:EClass" name="OperationalLimit" abstract="true"
+        eSuperTypes="#//Core/IdentifiedObject">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="A value associated with a specific kind of limit."/>
       </eAnnotations>
@@ -525,7 +526,8 @@
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="RegulatingCondEq" eSuperTypes="#//Core/ConductingEquipment">
+    <eClassifiers xsi:type="ecore:EClass" name="RegulatingCondEq" abstract="true"
+        eSuperTypes="#//Core/ConductingEquipment">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="RegulatingCondEq is a type of ConductingEquipment that can regulate Measurements and have a RegulationSchedule."/>
       </eAnnotations>
@@ -542,7 +544,7 @@
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EnergyConsumer" eSuperTypes="#//Core/ConductingEquipment">
+    <eClassifiers xsi:type="ecore:EClass" name="EnergyConsumer" abstract="true" eSuperTypes="#//Core/ConductingEquipment">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="Generic user of energy - a  point of consumption on the power system model"/>
       </eAnnotations>
@@ -795,7 +797,7 @@
       <eLiterals name="secondary" value="2"/>
       <eLiterals name="quaternary" value="3"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Conductor" eSuperTypes="#//Core/ConductingEquipment">
+    <eClassifiers xsi:type="ecore:EClass" name="Conductor" abstract="true" eSuperTypes="#//Core/ConductingEquipment">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="Combination of conducting material with consistent electrical characteristics, building a single electrical system, used to carry current between points in the power system."/>
       </eAnnotations>
@@ -1097,7 +1099,7 @@
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Measurement" eSuperTypes="#//Core/IdentifiedObject">
+    <eClassifiers xsi:type="ecore:EClass" name="Measurement" abstract="true" eSuperTypes="#//Core/IdentifiedObject">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="A Measurement represents any measured, calculated or non-measured non-calculated quantity. Any piece of equipment may contain Measurements, e.g. a substation may have temperature measurements and door open indications, a transformer may have oil temperature and tank pressure measurements, a bay may contain a number of  power flow measurements and a Breaker may contain a switch status measurement. &#xA;The PSR - Measurement association is intended to capture this use of Measurement and is included in the naming hierarchy based on EquipmentContainer. The naming hierarchy typically has Measurements as leafs, e.g. Substation-VoltageLevel-Bay-Switch-Measurement.&#xA;Some Measurements represent quantities related to a particular sensor location in the network, e.g. a voltage transformer (PT) at a busbar or a current transformer (CT) at the bar between a breaker and an isolator. The sensing position is not captured in the PSR - Measurement association. Instead it is captured by the Measurement - Terminal association that is used to define the sensing location in the network topology. The location is defined by the connection of the Terminal to ConductingEquipment. &#xA;Two possible paths exist:&#xA;1) Measurement-Terminal- ConnectivityNode-Terminal-ConductingEquipment&#xA;2) Measurement-Terminal-ConductingEquipment&#xA;Alternative 2 is the only allowed use. &#xA;When the sensor location is needed both Measurement-PSR and Measurement-Terminal are used. The Measurement-Terminal association is never used alone."/>
       </eAnnotations>
@@ -1141,7 +1143,8 @@
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="MeasurementValue" eSuperTypes="#//Core/IdentifiedObject">
+    <eClassifiers xsi:type="ecore:EClass" name="MeasurementValue" abstract="true"
+        eSuperTypes="#//Core/IdentifiedObject">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="The current state for a measurement. A state value is an instance of a measurement from a specific source. Measurements can be associated with many state values, each representing a different source for the measurement."/>
       </eAnnotations>
@@ -1455,7 +1458,8 @@
         <details key="Documentation" value="Station supply with load derived from the station output."/>
       </eAnnotations>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="SeasonDayTypeSchedule" eSuperTypes="#//Core/RegularIntervalSchedule">
+    <eClassifiers xsi:type="ecore:EClass" name="SeasonDayTypeSchedule" abstract="true"
+        eSuperTypes="#//Core/RegularIntervalSchedule">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="The schedule specialize RegularIntervalSchedule with type curve data for a specific type of day and season. This means that curves of this type cover a 24 hour period."/>
       </eAnnotations>
@@ -1481,7 +1485,7 @@
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="LoadGroup" eSuperTypes="#//Core/IdentifiedObject">
+    <eClassifiers xsi:type="ecore:EClass" name="LoadGroup" abstract="true" eSuperTypes="#//Core/IdentifiedObject">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="The class is the third level in a hierarchical structure for grouping of loads for the purpose of load flow load scaling."/>
       </eAnnotations>
@@ -1498,7 +1502,7 @@
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EnergyArea" eSuperTypes="#//Core/IdentifiedObject">
+    <eClassifiers xsi:type="ecore:EClass" name="EnergyArea" abstract="true" eSuperTypes="#//Core/IdentifiedObject">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="The class describes an area having energy production or consumption. The class is the basis for further specialization."/>
       </eAnnotations>
@@ -1757,7 +1761,8 @@
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EquivalentEquipment" eSuperTypes="#//Core/ConductingEquipment">
+    <eClassifiers xsi:type="ecore:EClass" name="EquivalentEquipment" abstract="true"
+        eSuperTypes="#//Core/ConductingEquipment">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="The class represents equivalent objects that are the result of a network reduction. The class is the base for equivalent objects of diferent types."/>
       </eAnnotations>
@@ -1807,7 +1812,8 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="Documentation" value="Contains the core PowerSystemResource and ConductingEquipment entities shared by all applications plus common collections of those entities. Not all applications require all the Core entities."/>
     </eAnnotations>
-    <eClassifiers xsi:type="ecore:EClass" name="IdentifiedObject" eSuperTypes="#//Element">
+    <eClassifiers xsi:type="ecore:EClass" name="IdentifiedObject" abstract="true"
+        eSuperTypes="#//Element">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="This is a root class to provide common naming attributes for all classes needing naming attributes"/>
       </eAnnotations>
@@ -1952,7 +1958,8 @@
       <eLiterals name="constantYValue" value="2"/>
       <eLiterals name="straightLineYValues" value="3"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="RegularIntervalSchedule" eSuperTypes="#//Core/BasicIntervalSchedule">
+    <eClassifiers xsi:type="ecore:EClass" name="RegularIntervalSchedule" abstract="true"
+        eSuperTypes="#//Core/BasicIntervalSchedule">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="The schedule has TimePoints where the time between them is constant."/>
       </eAnnotations>
@@ -1991,7 +1998,8 @@
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="ConnectivityNodeContainer" eSuperTypes="#//Core/PowerSystemResource">
+    <eClassifiers xsi:type="ecore:EClass" name="ConnectivityNodeContainer" abstract="true"
+        eSuperTypes="#//Core/PowerSystemResource">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="A base class for all objects that may contain ConnectivityNodes."/>
       </eAnnotations>
@@ -2033,7 +2041,8 @@
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EquipmentContainer" eSuperTypes="#//Core/ConnectivityNodeContainer">
+    <eClassifiers xsi:type="ecore:EClass" name="EquipmentContainer" abstract="true"
+        eSuperTypes="#//Core/ConnectivityNodeContainer">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="A modeling construct to provide a root class for all Equipment classes"/>
       </eAnnotations>
@@ -2215,7 +2224,7 @@
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Equipment" eSuperTypes="#//Core/PowerSystemResource">
+    <eClassifiers xsi:type="ecore:EClass" name="Equipment" abstract="true" eSuperTypes="#//Core/PowerSystemResource">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="The parts of a power system that are physical devices, electronic or mechanical"/>
       </eAnnotations>
@@ -2275,7 +2284,7 @@
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Curve" eSuperTypes="#//Core/IdentifiedObject">
+    <eClassifiers xsi:type="ecore:EClass" name="Curve" abstract="true" eSuperTypes="#//Core/IdentifiedObject">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="Relationship between an independent variable (X-axis) and one or two dependent &#xA;variables (Y1-axis and Y2-axis). Curves can also serve as schedules."/>
       </eAnnotations>
@@ -2331,7 +2340,8 @@
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="PowerSystemResource" eSuperTypes="#//Core/IdentifiedObject">
+    <eClassifiers xsi:type="ecore:EClass" name="PowerSystemResource" abstract="true"
+        eSuperTypes="#//Core/IdentifiedObject">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="A power system resource can be an item of equipment such as a Switch, an EquipmentContainer containing many individual items of equipment such as a &#xA;Substation, or an organisational entity such as Company or SubControlArea.  This provides for the nesting of collections of PowerSystemResources within other PowerSystemResources. For example, a Switch could be a member of a Substation and a Substation could be a member of a division of a Company."/>
       </eAnnotations>
@@ -2352,7 +2362,8 @@
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="BasicIntervalSchedule" eSuperTypes="#//Core/IdentifiedObject">
+    <eClassifiers xsi:type="ecore:EClass" name="BasicIntervalSchedule" abstract="true"
+        eSuperTypes="#//Core/IdentifiedObject">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="Schedule of values at points in time."/>
       </eAnnotations>
@@ -2452,7 +2463,8 @@
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="ConductingEquipment" eSuperTypes="#//Core/Equipment">
+    <eClassifiers xsi:type="ecore:EClass" name="ConductingEquipment" abstract="true"
+        eSuperTypes="#//Core/Equipment">
       <eAnnotations source="http://iec.ch/TC57/2008/CIM-schema-cim13#">
         <details key="Documentation" value="The parts of the power system that are designed to carry current or that are conductively connected therewith. ConductingEquipment is contained within an EquipmentContainer that may be a Substation, or a VoltageLevel or a Bay within a Substation."/>
       </eAnnotations>

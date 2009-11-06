@@ -86,8 +86,8 @@ public class CPSMAdapterFactory extends AdapterFactoryImpl {
 				return createIEC61970CIMVersionAdapter();
 			}
 			@Override
-			public Adapter caseModel(Model object) {
-				return createModelAdapter();
+			public Adapter caseCommonPowerSystemModel(CommonPowerSystemModel object) {
+				return createCommonPowerSystemModelAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -138,16 +138,16 @@ public class CPSMAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link CPSM.Model <em>Model</em>}'.
+	 * Creates a new adapter for an object of class '{@link CPSM.CommonPowerSystemModel <em>Common Power System Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see CPSM.Model
+	 * @see CPSM.CommonPowerSystemModel
 	 * @generated
 	 */
-	public Adapter createModelAdapter() {
+	public Adapter createCommonPowerSystemModelAdapter() {
 		return null;
 	}
 

@@ -32,15 +32,6 @@ public interface OperationalLimitsFactory extends EFactory {
 	OperationalLimitsFactory eINSTANCE = CPSM.OperationalLimits.impl.OperationalLimitsFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Operational Limit</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Operational Limit</em>'.
-	 * @generated
-	 */
-	OperationalLimit createOperationalLimit();
-
-	/**
 	 * Returns a new object of class '<em>Operational Limit Set</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

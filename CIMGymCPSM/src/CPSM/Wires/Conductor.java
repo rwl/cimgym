@@ -22,7 +22,8 @@ import CPSM.Core.ConductingEquipment;
  * </p>
  *
  * @see CPSM.Wires.WiresPackage#getConductor()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='Combination of conducting material with consistent electrical characteristics, building a single electrical system, used to carry current between points in the power system.'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='Combination of conducting material with consistent electrical characteristics, building a single electrical system, used to carry current between points in the power system.'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='Combination of conducting material with consistent electrical characteristics, building a single electrical system, used to carry current between points in the power system.'"
  * @generated
  */

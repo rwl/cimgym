@@ -40,7 +40,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class MeasurementImpl extends IdentifiedObjectImpl implements Measurement {
+public abstract class MeasurementImpl extends IdentifiedObjectImpl implements Measurement {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -20,7 +20,8 @@ import CPSM.Core.IdentifiedObject;
  * </p>
  *
  * @see CPSM.Meas.MeasPackage#getMeasurementValue()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The current state for a measurement. A state value is an instance of a measurement from a specific source. Measurements can be associated with many state values, each representing a different source for the measurement.'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The current state for a measurement. A state value is an instance of a measurement from a specific source. Measurements can be associated with many state values, each representing a different source for the measurement.'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='The current state for a measurement. A state value is an instance of a measurement from a specific source. Measurements can be associated with many state values, each representing a different source for the measurement.'"
  * @generated
  */

@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class LoadGroupImpl extends IdentifiedObjectImpl implements LoadGroup {
+public abstract class LoadGroupImpl extends IdentifiedObjectImpl implements LoadGroup {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

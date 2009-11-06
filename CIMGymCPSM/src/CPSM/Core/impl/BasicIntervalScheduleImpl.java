@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class BasicIntervalScheduleImpl extends IdentifiedObjectImpl implements BasicIntervalSchedule {
+public abstract class BasicIntervalScheduleImpl extends IdentifiedObjectImpl implements BasicIntervalSchedule {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

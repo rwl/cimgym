@@ -67,8 +67,6 @@ public class MeasFactoryImpl extends EFactoryImpl implements MeasFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case MeasPackage.DISCRETE_VALUE: return createDiscreteValue();
-			case MeasPackage.MEASUREMENT: return createMeasurement();
-			case MeasPackage.MEASUREMENT_VALUE: return createMeasurementValue();
 			case MeasPackage.MEASUREMENT_VALUE_SOURCE: return createMeasurementValueSource();
 			case MeasPackage.ANALOG: return createAnalog();
 			case MeasPackage.ANALOG_VALUE: return createAnalogValue();
@@ -88,26 +86,6 @@ public class MeasFactoryImpl extends EFactoryImpl implements MeasFactory {
 	public DiscreteValue createDiscreteValue() {
 		DiscreteValueImpl discreteValue = new DiscreteValueImpl();
 		return discreteValue;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Measurement createMeasurement() {
-		MeasurementImpl measurement = new MeasurementImpl();
-		return measurement;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MeasurementValue createMeasurementValue() {
-		MeasurementValueImpl measurementValue = new MeasurementValueImpl();
-		return measurementValue;
 	}
 
 	/**

@@ -372,7 +372,7 @@ public class EquivalentsPackageImpl extends EPackageImpl implements EquivalentsP
 		initEAttribute(getEquivalentShunt_B(), theDomainPackage.getSusceptance(), "b", null, 1, 1, EquivalentShunt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEquivalentShunt_G(), theDomainPackage.getConductance(), "g", null, 1, 1, EquivalentShunt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(equivalentEquipmentEClass, EquivalentEquipment.class, "EquivalentEquipment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(equivalentEquipmentEClass, EquivalentEquipment.class, "EquivalentEquipment", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEquivalentEquipment_EquivalentNetwork(), this.getEquivalentNetwork(), this.getEquivalentNetwork_EquivalentEquipments(), "EquivalentNetwork", null, 1, 1, EquivalentEquipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(equivalentBranchEClass, EquivalentBranch.class, "EquivalentBranch", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

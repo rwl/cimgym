@@ -21,7 +21,8 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see CPSM.Core.CorePackage#getConductingEquipment()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The parts of the power system that are designed to carry current or that are conductively connected therewith. ConductingEquipment is contained within an EquipmentContainer that may be a Substation, or a VoltageLevel or a Bay within a Substation.'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The parts of the power system that are designed to carry current or that are conductively connected therewith. ConductingEquipment is contained within an EquipmentContainer that may be a Substation, or a VoltageLevel or a Bay within a Substation.'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='The parts of the power system that are designed to carry current or that are conductively connected therewith. ConductingEquipment is contained within an EquipmentContainer that may be a Substation, or a VoltageLevel or a Bay within a Substation.'"
  * @generated
  */

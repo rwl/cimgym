@@ -32,15 +32,6 @@ public interface CoreFactory extends EFactory {
 	CoreFactory eINSTANCE = CPSM.Core.impl.CoreFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Identified Object</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Identified Object</em>'.
-	 * @generated
-	 */
-	IdentifiedObject createIdentifiedObject();
-
-	/**
 	 * Returns a new object of class '<em>Terminal</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,24 +50,6 @@ public interface CoreFactory extends EFactory {
 	BaseVoltage createBaseVoltage();
 
 	/**
-	 * Returns a new object of class '<em>Regular Interval Schedule</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Regular Interval Schedule</em>'.
-	 * @generated
-	 */
-	RegularIntervalSchedule createRegularIntervalSchedule();
-
-	/**
-	 * Returns a new object of class '<em>Connectivity Node Container</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Connectivity Node Container</em>'.
-	 * @generated
-	 */
-	ConnectivityNodeContainer createConnectivityNodeContainer();
-
-	/**
 	 * Returns a new object of class '<em>Unit</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -84,15 +57,6 @@ public interface CoreFactory extends EFactory {
 	 * @generated
 	 */
 	Unit createUnit();
-
-	/**
-	 * Returns a new object of class '<em>Equipment Container</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Equipment Container</em>'.
-	 * @generated
-	 */
-	EquipmentContainer createEquipmentContainer();
 
 	/**
 	 * Returns a new object of class '<em>Voltage Level</em>'.
@@ -131,15 +95,6 @@ public interface CoreFactory extends EFactory {
 	RegularTimePoint createRegularTimePoint();
 
 	/**
-	 * Returns a new object of class '<em>Equipment</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Equipment</em>'.
-	 * @generated
-	 */
-	Equipment createEquipment();
-
-	/**
 	 * Returns a new object of class '<em>Substation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -147,33 +102,6 @@ public interface CoreFactory extends EFactory {
 	 * @generated
 	 */
 	Substation createSubstation();
-
-	/**
-	 * Returns a new object of class '<em>Curve</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Curve</em>'.
-	 * @generated
-	 */
-	Curve createCurve();
-
-	/**
-	 * Returns a new object of class '<em>Power System Resource</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Power System Resource</em>'.
-	 * @generated
-	 */
-	PowerSystemResource createPowerSystemResource();
-
-	/**
-	 * Returns a new object of class '<em>Basic Interval Schedule</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Basic Interval Schedule</em>'.
-	 * @generated
-	 */
-	BasicIntervalSchedule createBasicIntervalSchedule();
 
 	/**
 	 * Returns a new object of class '<em>Curve Data</em>'.
@@ -192,15 +120,6 @@ public interface CoreFactory extends EFactory {
 	 * @generated
 	 */
 	GeographicalRegion createGeographicalRegion();
-
-	/**
-	 * Returns a new object of class '<em>Conducting Equipment</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Conducting Equipment</em>'.
-	 * @generated
-	 */
-	ConductingEquipment createConductingEquipment();
 
 	/**
 	 * Returns the package supported by this factory.

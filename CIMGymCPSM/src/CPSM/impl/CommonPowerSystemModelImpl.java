@@ -6,8 +6,8 @@
 package CPSM.impl;
 
 import CPSM.CPSMPackage;
+import CPSM.CommonPowerSystemModel;
 import CPSM.Element;
-import CPSM.Model;
 
 import java.util.Collection;
 
@@ -25,18 +25,18 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Model</b></em>'.
+ * An implementation of the model object '<em><b>Common Power System Model</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link CPSM.impl.ModelImpl#getElements <em>Elements</em>}</li>
+ *   <li>{@link CPSM.impl.CommonPowerSystemModelImpl#getElements <em>Elements</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class ModelImpl extends EObjectImpl implements Model {
+public class CommonPowerSystemModelImpl extends EObjectImpl implements CommonPowerSystemModel {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,7 +59,7 @@ public class ModelImpl extends EObjectImpl implements Model {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ModelImpl() {
+	protected CommonPowerSystemModelImpl() {
 		super();
 	}
 
@@ -70,7 +70,7 @@ public class ModelImpl extends EObjectImpl implements Model {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return CPSMPackage.Literals.MODEL;
+		return CPSMPackage.Literals.COMMON_POWER_SYSTEM_MODEL;
 	}
 
 	/**
@@ -80,7 +80,7 @@ public class ModelImpl extends EObjectImpl implements Model {
 	 */
 	public EList<Element> getElements() {
 		if (elements == null) {
-			elements = new EObjectContainmentWithInverseEList<Element>(Element.class, this, CPSMPackage.MODEL__ELEMENTS, CPSMPackage.ELEMENT__MODEL);
+			elements = new EObjectContainmentWithInverseEList<Element>(Element.class, this, CPSMPackage.COMMON_POWER_SYSTEM_MODEL__ELEMENTS, CPSMPackage.ELEMENT__MODEL);
 		}
 		return elements;
 	}
@@ -94,7 +94,7 @@ public class ModelImpl extends EObjectImpl implements Model {
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case CPSMPackage.MODEL__ELEMENTS:
+			case CPSMPackage.COMMON_POWER_SYSTEM_MODEL__ELEMENTS:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getElements()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -108,7 +108,7 @@ public class ModelImpl extends EObjectImpl implements Model {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case CPSMPackage.MODEL__ELEMENTS:
+			case CPSMPackage.COMMON_POWER_SYSTEM_MODEL__ELEMENTS:
 				return ((InternalEList<?>)getElements()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -122,7 +122,7 @@ public class ModelImpl extends EObjectImpl implements Model {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case CPSMPackage.MODEL__ELEMENTS:
+			case CPSMPackage.COMMON_POWER_SYSTEM_MODEL__ELEMENTS:
 				return getElements();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -137,7 +137,7 @@ public class ModelImpl extends EObjectImpl implements Model {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case CPSMPackage.MODEL__ELEMENTS:
+			case CPSMPackage.COMMON_POWER_SYSTEM_MODEL__ELEMENTS:
 				getElements().clear();
 				getElements().addAll((Collection<? extends Element>)newValue);
 				return;
@@ -153,7 +153,7 @@ public class ModelImpl extends EObjectImpl implements Model {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case CPSMPackage.MODEL__ELEMENTS:
+			case CPSMPackage.COMMON_POWER_SYSTEM_MODEL__ELEMENTS:
 				getElements().clear();
 				return;
 		}
@@ -168,10 +168,10 @@ public class ModelImpl extends EObjectImpl implements Model {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case CPSMPackage.MODEL__ELEMENTS:
+			case CPSMPackage.COMMON_POWER_SYSTEM_MODEL__ELEMENTS:
 				return elements != null && !elements.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //ModelImpl
+} //CommonPowerSystemModelImpl

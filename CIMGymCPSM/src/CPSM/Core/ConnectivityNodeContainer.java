@@ -22,7 +22,8 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see CPSM.Core.CorePackage#getConnectivityNodeContainer()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='A base class for all objects that may contain ConnectivityNodes.'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='A base class for all objects that may contain ConnectivityNodes.'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='A base class for all objects that may contain ConnectivityNodes.'"
  * @generated
  */

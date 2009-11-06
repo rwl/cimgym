@@ -68,7 +68,6 @@ public class EquivalentsFactoryImpl extends EFactoryImpl implements EquivalentsF
 		switch (eClass.getClassifierID()) {
 			case EquivalentsPackage.EQUIVALENT_NETWORK: return createEquivalentNetwork();
 			case EquivalentsPackage.EQUIVALENT_SHUNT: return createEquivalentShunt();
-			case EquivalentsPackage.EQUIVALENT_EQUIPMENT: return createEquivalentEquipment();
 			case EquivalentsPackage.EQUIVALENT_BRANCH: return createEquivalentBranch();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -93,16 +92,6 @@ public class EquivalentsFactoryImpl extends EFactoryImpl implements EquivalentsF
 	public EquivalentShunt createEquivalentShunt() {
 		EquivalentShuntImpl equivalentShunt = new EquivalentShuntImpl();
 		return equivalentShunt;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EquivalentEquipment createEquivalentEquipment() {
-		EquivalentEquipmentImpl equivalentEquipment = new EquivalentEquipmentImpl();
-		return equivalentEquipment;
 	}
 
 	/**

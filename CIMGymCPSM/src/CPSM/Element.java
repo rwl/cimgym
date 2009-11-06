@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see CPSM.CPSMPackage#getElement()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface Element extends EObject {
@@ -60,7 +60,7 @@ public interface Element extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Model</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link CPSM.Model#getElements <em>Elements</em>}'.
+	 * It is bidirectional and its opposite is '{@link CPSM.CommonPowerSystemModel#getElements <em>Elements</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Model</em>' container reference isn't clear,
@@ -68,13 +68,13 @@ public interface Element extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Model</em>' container reference.
-	 * @see #setModel(Model)
+	 * @see #setModel(CommonPowerSystemModel)
 	 * @see CPSM.CPSMPackage#getElement_Model()
-	 * @see CPSM.Model#getElements
+	 * @see CPSM.CommonPowerSystemModel#getElements
 	 * @model opposite="Elements" required="true" transient="false"
 	 * @generated
 	 */
-	Model getModel();
+	CommonPowerSystemModel getModel();
 
 	/**
 	 * Sets the value of the '{@link CPSM.Element#getModel <em>Model</em>}' container reference.
@@ -84,6 +84,6 @@ public interface Element extends EObject {
 	 * @see #getModel()
 	 * @generated
 	 */
-	void setModel(Model value);
+	void setModel(CommonPowerSystemModel value);
 
 } // Element

@@ -75,9 +75,6 @@ public class LoadModelFactoryImpl extends EFactoryImpl implements LoadModelFacto
 			case LoadModelPackage.SEASON: return createSeason();
 			case LoadModelPackage.LOAD: return createLoad();
 			case LoadModelPackage.STATION_SUPPLY: return createStationSupply();
-			case LoadModelPackage.SEASON_DAY_TYPE_SCHEDULE: return createSeasonDayTypeSchedule();
-			case LoadModelPackage.LOAD_GROUP: return createLoadGroup();
-			case LoadModelPackage.ENERGY_AREA: return createEnergyArea();
 			case LoadModelPackage.CONFORM_LOAD_GROUP: return createConformLoadGroup();
 			case LoadModelPackage.LOAD_AREA: return createLoadArea();
 			case LoadModelPackage.SUB_LOAD_AREA: return createSubLoadArea();
@@ -198,36 +195,6 @@ public class LoadModelFactoryImpl extends EFactoryImpl implements LoadModelFacto
 	public StationSupply createStationSupply() {
 		StationSupplyImpl stationSupply = new StationSupplyImpl();
 		return stationSupply;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SeasonDayTypeSchedule createSeasonDayTypeSchedule() {
-		SeasonDayTypeScheduleImpl seasonDayTypeSchedule = new SeasonDayTypeScheduleImpl();
-		return seasonDayTypeSchedule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public LoadGroup createLoadGroup() {
-		LoadGroupImpl loadGroup = new LoadGroupImpl();
-		return loadGroup;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EnergyArea createEnergyArea() {
-		EnergyAreaImpl energyArea = new EnergyAreaImpl();
-		return energyArea;
 	}
 
 	/**

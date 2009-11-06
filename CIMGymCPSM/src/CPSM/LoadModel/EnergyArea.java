@@ -22,7 +22,8 @@ import CPSM.Core.IdentifiedObject;
  * </p>
  *
  * @see CPSM.LoadModel.LoadModelPackage#getEnergyArea()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The class describes an area having energy production or consumption. The class is the basis for further specialization.'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='The class describes an area having energy production or consumption. The class is the basis for further specialization.'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='The class describes an area having energy production or consumption. The class is the basis for further specialization.'"
  * @generated
  */

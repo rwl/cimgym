@@ -66,22 +66,11 @@ public class CPSMFactoryImpl extends EFactoryImpl implements CPSMFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case CPSMPackage.ELEMENT: return createElement();
 			case CPSMPackage.IEC61970CIM_VERSION: return createIEC61970CIMVersion();
-			case CPSMPackage.MODEL: return createModel();
+			case CPSMPackage.COMMON_POWER_SYSTEM_MODEL: return createCommonPowerSystemModel();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Element createElement() {
-		ElementImpl element = new ElementImpl();
-		return element;
 	}
 
 	/**
@@ -99,9 +88,9 @@ public class CPSMFactoryImpl extends EFactoryImpl implements CPSMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Model createModel() {
-		ModelImpl model = new ModelImpl();
-		return model;
+	public CommonPowerSystemModel createCommonPowerSystemModel() {
+		CommonPowerSystemModelImpl commonPowerSystemModel = new CommonPowerSystemModelImpl();
+		return commonPowerSystemModel;
 	}
 
 	/**

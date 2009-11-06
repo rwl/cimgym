@@ -159,16 +159,15 @@ public interface CPSMPackage extends EPackage {
 	 */
 	int IEC61970CIM_VERSION_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 2;
 
-
 	/**
-	 * The meta object id for the '{@link CPSM.impl.ModelImpl <em>Model</em>}' class.
+	 * The meta object id for the '{@link CPSM.impl.CommonPowerSystemModelImpl <em>Common Power System Model</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see CPSM.impl.ModelImpl
-	 * @see CPSM.impl.CPSMPackageImpl#getModel()
+	 * @see CPSM.impl.CommonPowerSystemModelImpl
+	 * @see CPSM.impl.CPSMPackageImpl#getCommonPowerSystemModel()
 	 * @generated
 	 */
-	int MODEL = 2;
+	int COMMON_POWER_SYSTEM_MODEL = 2;
 
 	/**
 	 * The feature id for the '<em><b>Elements</b></em>' containment reference list.
@@ -177,16 +176,16 @@ public interface CPSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL__ELEMENTS = 0;
+	int COMMON_POWER_SYSTEM_MODEL__ELEMENTS = 0;
 
 	/**
-	 * The number of structural features of the '<em>Model</em>' class.
+	 * The number of structural features of the '<em>Common Power System Model</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_FEATURE_COUNT = 1;
+	int COMMON_POWER_SYSTEM_MODEL_FEATURE_COUNT = 1;
 
 
 	/**
@@ -254,25 +253,25 @@ public interface CPSMPackage extends EPackage {
 	EAttribute getIEC61970CIMVersion_Date();
 
 	/**
-	 * Returns the meta object for class '{@link CPSM.Model <em>Model</em>}'.
+	 * Returns the meta object for class '{@link CPSM.CommonPowerSystemModel <em>Common Power System Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Model</em>'.
-	 * @see CPSM.Model
+	 * @return the meta object for class '<em>Common Power System Model</em>'.
+	 * @see CPSM.CommonPowerSystemModel
 	 * @generated
 	 */
-	EClass getModel();
+	EClass getCommonPowerSystemModel();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link CPSM.Model#getElements <em>Elements</em>}'.
+	 * Returns the meta object for the containment reference list '{@link CPSM.CommonPowerSystemModel#getElements <em>Elements</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Elements</em>'.
-	 * @see CPSM.Model#getElements()
-	 * @see #getModel()
+	 * @see CPSM.CommonPowerSystemModel#getElements()
+	 * @see #getCommonPowerSystemModel()
 	 * @generated
 	 */
-	EReference getModel_Elements();
+	EReference getCommonPowerSystemModel_Elements();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -349,14 +348,14 @@ public interface CPSMPackage extends EPackage {
 		EAttribute IEC61970CIM_VERSION__DATE = eINSTANCE.getIEC61970CIMVersion_Date();
 
 		/**
-		 * The meta object literal for the '{@link CPSM.impl.ModelImpl <em>Model</em>}' class.
+		 * The meta object literal for the '{@link CPSM.impl.CommonPowerSystemModelImpl <em>Common Power System Model</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see CPSM.impl.ModelImpl
-		 * @see CPSM.impl.CPSMPackageImpl#getModel()
+		 * @see CPSM.impl.CommonPowerSystemModelImpl
+		 * @see CPSM.impl.CPSMPackageImpl#getCommonPowerSystemModel()
 		 * @generated
 		 */
-		EClass MODEL = eINSTANCE.getModel();
+		EClass COMMON_POWER_SYSTEM_MODEL = eINSTANCE.getCommonPowerSystemModel();
 
 		/**
 		 * The meta object literal for the '<em><b>Elements</b></em>' containment reference list feature.
@@ -364,7 +363,7 @@ public interface CPSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference MODEL__ELEMENTS = eINSTANCE.getModel_Elements();
+		EReference COMMON_POWER_SYSTEM_MODEL__ELEMENTS = eINSTANCE.getCommonPowerSystemModel_Elements();
 
 	}
 

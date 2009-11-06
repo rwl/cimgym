@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class MeasurementValueImpl extends IdentifiedObjectImpl implements MeasurementValue {
+public abstract class MeasurementValueImpl extends IdentifiedObjectImpl implements MeasurementValue {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -36,7 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class PowerSystemResourceImpl extends IdentifiedObjectImpl implements PowerSystemResource {
+public abstract class PowerSystemResourceImpl extends IdentifiedObjectImpl implements PowerSystemResource {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

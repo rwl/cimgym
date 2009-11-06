@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class EnergyAreaImpl extends IdentifiedObjectImpl implements EnergyArea {
+public abstract class EnergyAreaImpl extends IdentifiedObjectImpl implements EnergyArea {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

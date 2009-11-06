@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class ConductorImpl extends ConductingEquipmentImpl implements Conductor {
+public abstract class ConductorImpl extends ConductingEquipmentImpl implements Conductor {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

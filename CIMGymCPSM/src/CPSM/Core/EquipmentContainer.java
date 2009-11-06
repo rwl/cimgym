@@ -20,7 +20,8 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see CPSM.Core.CorePackage#getEquipmentContainer()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='A modeling construct to provide a root class for all Equipment classes'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='A modeling construct to provide a root class for all Equipment classes'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='A modeling construct to provide a root class for all Equipment classes'"
  * @generated
  */

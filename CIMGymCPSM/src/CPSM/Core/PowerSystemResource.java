@@ -22,7 +22,8 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see CPSM.Core.CorePackage#getPowerSystemResource()
- * @model annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='A power system resource can be an item of equipment such as a Switch, an EquipmentContainer containing many individual items of equipment such as a \nSubstation, or an organisational entity such as Company or SubControlArea.  This provides for the nesting of collections of PowerSystemResources within other PowerSystemResources. For example, a Switch could be a member of a Substation and a Substation could be a member of a division of a Company.'"
+ * @model abstract="true"
+ *        annotation="http://iec.ch/TC57/2008/CIM-schema-cim13# Documentation='A power system resource can be an item of equipment such as a Switch, an EquipmentContainer containing many individual items of equipment such as a \nSubstation, or an organisational entity such as Company or SubControlArea.  This provides for the nesting of collections of PowerSystemResources within other PowerSystemResources. For example, a Switch could be a member of a Substation and a Substation could be a member of a division of a Company.'"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel Documentation='A power system resource can be an item of equipment such as a Switch, an EquipmentContainer containing many individual items of equipment such as a \nSubstation, or an organisational entity such as Company or SubControlArea.  This provides for the nesting of collections of PowerSystemResources within other PowerSystemResources. For example, a Switch could be a member of a Substation and a Substation could be a member of a division of a Company.'"
  * @generated
  */
