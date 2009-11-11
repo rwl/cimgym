@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.cimgym.cpsm/src"
+    modelPluginID="org.cimgym.cpsm" modelName="CPSM" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>CPSM.ecore</foreignModel>
+  <genPackages prefix="CPSM" disposableProviderFactory="true" ecorePackage="CPSM.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CPSM.ecore#//GeneratorControlSource">
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//GeneratorControlSource/offAGC"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//GeneratorControlSource/Unavailable"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//GeneratorControlSource/onAGC"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//GeneratorControlSource/PlantControl"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CPSM.ecore#//SynchronousMachineOperatingMode">
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//SynchronousMachineOperatingMode/generator"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//SynchronousMachineOperatingMode/condenser"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CPSM.ecore#//TapChangerKind">
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//TapChangerKind/voltageAndPhaseControl"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//TapChangerKind/phaseControl"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//TapChangerKind/fixed"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//TapChangerKind/voltageControl"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CPSM.ecore#//SVCControlMode">
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//SVCControlMode/voltage"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//SVCControlMode/off"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//SVCControlMode/reactivePower"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CPSM.ecore#//WindingType">
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//WindingType/primary"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//WindingType/tertiary"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//WindingType/secondary"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//WindingType/quaternary"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CPSM.ecore#//SynchronousMachineType">
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//SynchronousMachineType/generator"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//SynchronousMachineType/generator_or_condenser"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//SynchronousMachineType/condenser"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CPSM.ecore#//TransformerControlMode">
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//TransformerControlMode/local"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//TransformerControlMode/active"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//TransformerControlMode/volt"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//TransformerControlMode/off"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//TransformerControlMode/reactive"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CPSM.ecore#//SeasonName">
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//SeasonName/fall"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//SeasonName/winter"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//SeasonName/spring"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//SeasonName/summer"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CPSM.ecore#//CurveStyle">
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//CurveStyle/rampYValue"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//CurveStyle/formula"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//CurveStyle/constantYValue"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//CurveStyle/straightLineYValues"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CPSM.ecore#//ControlAreaTypeKind">
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//ControlAreaTypeKind/Forecast"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//ControlAreaTypeKind/Interchange"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//ControlAreaTypeKind/AGC"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CPSM.ecore#//UnitSymbol">
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/W_s"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/none"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/sec"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/hour"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/J_s"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/VA"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/Wh"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/ohm"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/m3"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/perHz"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/W"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/min"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/rad"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/g"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/J"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/H"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/F"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/kg_J"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/VAh"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/per_s"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/degC"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/deg"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/Pa"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/VAr"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/S"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/W_Hz"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/m"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/m2"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/Hz"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/A"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/N"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/V_VAr"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/VArh"/>
+      <genEnumLiterals ecoreEnumLiteral="CPSM.ecore#//UnitSymbol/V"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="CPSM.ecore#//CurrentFlow"/>
+    <genDataTypes ecoreDataType="CPSM.ecore#//ActivePower"/>
+    <genDataTypes ecoreDataType="CPSM.ecore#//Seconds"/>
+    <genDataTypes ecoreDataType="CPSM.ecore#//Susceptance"/>
+    <genDataTypes ecoreDataType="CPSM.ecore#//Conductance"/>
+    <genDataTypes ecoreDataType="CPSM.ecore#//Resistance"/>
+    <genDataTypes ecoreDataType="CPSM.ecore#//PerCent"/>
+    <genDataTypes ecoreDataType="CPSM.ecore#//ReactivePower"/>
+    <genDataTypes ecoreDataType="CPSM.ecore#//AngleDegrees"/>
+    <genDataTypes ecoreDataType="CPSM.ecore#//Voltage"/>
+    <genDataTypes ecoreDataType="CPSM.ecore#//ApparentPower"/>
+    <genDataTypes ecoreDataType="CPSM.ecore#//Reactance"/>
+    <genDataTypes ecoreDataType="CPSM.ecore#//VoltagePerReactivePower"/>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//Element">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//Element/URI"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference CPSM.ecore#//Element/Model"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//IEC61970CIMVersion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//IEC61970CIMVersion/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//IEC61970CIMVersion/date"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//CommonPowerSystemModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CPSM.ecore#//CommonPowerSystemModel/Elements"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//GrossToNetActivePowerCurve">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//GrossToNetActivePowerCurve/GeneratingUnit"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//HydroGeneratingUnit"/>
+    <genClasses ecoreClass="CPSM.ecore#//ThermalGeneratingUnit"/>
+    <genClasses ecoreClass="CPSM.ecore#//GeneratingUnit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//GeneratingUnit/maxOperatingP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//GeneratingUnit/normalPF"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//GeneratingUnit/ratedGrossMaxP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//GeneratingUnit/ratedGrossMinP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//GeneratingUnit/genControlSource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//GeneratingUnit/ratedNetMaxP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//GeneratingUnit/longPF"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//GeneratingUnit/Contains_SynchronousMachines"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//GeneratingUnit/GrossToNetActivePowerCurves"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//GeneratingUnit/initialP"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//GeneratingUnit/ControlAreaGeneratingUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//GeneratingUnit/shortPF"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//GeneratingUnit/minOperatingP"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//OperationalLimit">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//OperationalLimit/OperationalLimitSet"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//OperationalLimit/type"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//OperationalLimitSet">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//OperationalLimitSet/Equipment"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//OperationalLimitSet/OperationalLimitValue"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//ActivePowerLimit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//ActivePowerLimit/value"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//ApparentPowerLimit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//ApparentPowerLimit/value"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//VoltageLimit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//VoltageLimit/value"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//CurrentLimit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//CurrentLimit/value"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//PowerTransformer">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//PowerTransformer/Contains_TransformerWindings"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//Disconnector"/>
+    <genClasses ecoreClass="CPSM.ecore#//SynchronousMachine">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//SynchronousMachine/InitialReactiveCapabilityCurve"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//SynchronousMachine/operatingMode"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//SynchronousMachine/MemberOf_GeneratingUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//SynchronousMachine/minQ"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//SynchronousMachine/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//SynchronousMachine/maxQ"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//BusbarSection"/>
+    <genClasses ecoreClass="CPSM.ecore#//ShuntCompensator">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//ShuntCompensator/maximumSections"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//ShuntCompensator/normalSections"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//ShuntCompensator/nomU"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//ShuntCompensator/reactivePerSection"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//LoadBreakSwitch">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//LoadBreakSwitch/ratedCurrent"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//RegulatingCondEq">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//RegulatingCondEq/RegulatingControl"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//EnergyConsumer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//EnergyConsumer/qfixedPct"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//EnergyConsumer/pfixed"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//EnergyConsumer/LoadResponse"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//EnergyConsumer/qfixed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//EnergyConsumer/pfixedPct"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//TransformerWinding">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TransformerWinding/windingType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//TransformerWinding/TapChangers"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//TransformerWinding/MemberOf_PowerTransformer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TransformerWinding/ratedS"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TransformerWinding/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TransformerWinding/ratedU"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TransformerWinding/r"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TransformerWinding/b"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//RegulatingControl">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//RegulatingControl/Terminal"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//RegulatingControl/RegulationSchedule"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//RegulatingControl/TapChanger"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//RegulatingControl/RegulatingCondEq"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//RegulationSchedule">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//RegulationSchedule/RegulatingControl"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//ACLineSegment"/>
+    <genClasses ecoreClass="CPSM.ecore#//Switch">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//Switch/normalOpen"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//Conductor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//Conductor/r"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//Conductor/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//Conductor/bch"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//ReactiveCapabilityCurve">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ReactiveCapabilityCurve/InitiallyUsedBySynchronousMachine"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//TapChanger">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//TapChanger/RegulatingControl"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//TapChanger/TransformerWinding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TapChanger/normalStep"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TapChanger/highStep"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TapChanger/stepPhaseShiftIncrement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TapChanger/neutralStep"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TapChanger/lowStep"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TapChanger/tculControlMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TapChanger/stepVoltageIncrement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TapChanger/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TapChanger/neutralU"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//Line">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Line/Region"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//StaticVarCompensator">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//StaticVarCompensator/voltageSetPoint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//StaticVarCompensator/sVCControlMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//StaticVarCompensator/capacitiveRating"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//StaticVarCompensator/slope"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//StaticVarCompensator/inductiveRating"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//SeriesCompensator">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//SeriesCompensator/r"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//SeriesCompensator/x"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//Breaker">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//Breaker/ratedCurrent"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//DiscreteValue">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//DiscreteValue/MemberOf_Measurement"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//Measurement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Measurement/MemberOf_PSR"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Measurement/MeasurementType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Measurement/Terminal"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Measurement/Unit"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//MeasurementValue">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//MeasurementValue/MeasurementValueSource"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//MeasurementValueSource">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//MeasurementValueSource/MeasurementValues"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//Analog">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//Analog/positiveFlowIn"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Analog/Contain_MeasurementValues"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//AnalogValue">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//AnalogValue/MemberOf_Measurement"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//MeasurementType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//MeasurementType/Measurements"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//Discrete">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Discrete/Contain_MeasurementValues"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//LimitSet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//LimitSet/isPercentageLimits"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//NonConformLoadGroup">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//NonConformLoadGroup/NonConformLoadSchedules"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//NonConformLoadGroup/EnergyConsumers"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//ConformLoadSchedule">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ConformLoadSchedule/ConformLoadGroup"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//CustomerLoad"/>
+    <genClasses ecoreClass="CPSM.ecore#//NonConformLoad">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//NonConformLoad/LoadGroup"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//DayType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//DayType/SeasonDayTypeSchedules"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//Season">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//Season/endDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//Season/startDate"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Season/SeasonDayTypeSchedules"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//Season/name"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//Load"/>
+    <genClasses ecoreClass="CPSM.ecore#//StationSupply"/>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//SeasonDayTypeSchedule">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//SeasonDayTypeSchedule/DayType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//SeasonDayTypeSchedule/Season"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//LoadGroup">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//LoadGroup/SubLoadArea"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//EnergyArea">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//EnergyArea/ControlArea"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//ConformLoadGroup">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ConformLoadGroup/EnergyConsumers"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ConformLoadGroup/ConformLoadSchedules"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//LoadArea">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//LoadArea/SubLoadAreas"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//SubLoadArea">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//SubLoadArea/LoadGroups"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//SubLoadArea/LoadArea"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//LoadResponseCharacteristic">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//LoadResponseCharacteristic/pFrequencyExponent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//LoadResponseCharacteristic/qVoltageExponent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//LoadResponseCharacteristic/qFrequencyExponent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//LoadResponseCharacteristic/pVoltageExponent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//LoadResponseCharacteristic/EnergyConsumer"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//NonConformLoadSchedule">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//NonConformLoadSchedule/NonConformLoadGroup"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//InductionMotorLoad"/>
+    <genClasses ecoreClass="CPSM.ecore#//ConformLoad">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ConformLoad/LoadGroup"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//EquivalentNetwork">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//EquivalentNetwork/EquivalentEquipments"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//EquivalentShunt">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//EquivalentShunt/b"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//EquivalentShunt/g"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//EquivalentEquipment">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//EquivalentEquipment/EquivalentNetwork"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//EquivalentBranch">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//EquivalentBranch/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//EquivalentBranch/r"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//IdentifiedObject">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//IdentifiedObject/pathName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//IdentifiedObject/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//IdentifiedObject/aliasName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//IdentifiedObject/name"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//Terminal">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Terminal/Measurements"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Terminal/RegulatingControl"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Terminal/ConnectivityNode"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Terminal/ConductingEquipment"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//BaseVoltage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//BaseVoltage/nominalVoltage"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//BaseVoltage/ConductingEquipment"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//BaseVoltage/VoltageLevel"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//RegularIntervalSchedule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//RegularIntervalSchedule/endTime"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//RegularIntervalSchedule/TimePoints"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//RegularIntervalSchedule/timeStep"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//ConnectivityNodeContainer">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ConnectivityNodeContainer/ConnectivityNodes"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//Unit">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Unit/Measurements"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//EquipmentContainer">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//EquipmentContainer/Contains_Equipments"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//VoltageLevel">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//VoltageLevel/MemberOf_Substation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//VoltageLevel/lowVoltageLimit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//VoltageLevel/highVoltageLimit"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//VoltageLevel/BaseVoltage"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//VoltageLevel/Contains_Bays"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//Bay">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Bay/MemberOf_VoltageLevel"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//SubGeographicalRegion">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//SubGeographicalRegion/Region"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//SubGeographicalRegion/Lines"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//SubGeographicalRegion/Substations"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//RegularTimePoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//RegularTimePoint/value1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//RegularTimePoint/sequenceNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//RegularTimePoint/value2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//RegularTimePoint/IntervalSchedule"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//Equipment">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Equipment/MemberOf_EquipmentContainer"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Equipment/OperationalLimitSet"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//Substation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Substation/Region"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Substation/Contains_VoltageLevels"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//Curve">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//Curve/y2Unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//Curve/xUnit"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//Curve/CurveScheduleDatas"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//Curve/curveStyle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//Curve/y1Unit"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//PowerSystemResource">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//PowerSystemResource/Contains_Measurements"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//BasicIntervalSchedule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//BasicIntervalSchedule/startTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//BasicIntervalSchedule/value1Unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//BasicIntervalSchedule/value2Unit"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//CurveData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//CurveData/y2value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//CurveData/xvalue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//CurveData/y1value"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//CurveData/CurveSchedule"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//GeographicalRegion">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//GeographicalRegion/Regions"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CPSM.ecore#//ConductingEquipment">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ConductingEquipment/BaseVoltage"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ConductingEquipment/Terminals"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//ControlArea">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ControlArea/ControlAreaGeneratingUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//ControlArea/netInterchange"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ControlArea/EnergyArea"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ControlArea/TieFlow"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//ControlArea/type"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//TieFlow">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//TieFlow/ControlArea"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CPSM.ecore#//TieFlow/positiveFlowIn"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//ControlAreaGeneratingUnit">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ControlAreaGeneratingUnit/ControlArea"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ControlAreaGeneratingUnit/GeneratingUnit"/>
+    </genClasses>
+    <genClasses ecoreClass="CPSM.ecore#//ConnectivityNode">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ConnectivityNode/Terminals"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CPSM.ecore#//ConnectivityNode/MemberOf_EquipmentContainer"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

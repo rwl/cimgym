@@ -1,0 +1,8 @@
+#Wed Nov 11 16:06:50 GMT 2009
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/org.cimgym.cpsm/model/CPSM.genmodel
+gmf_dashboard/domainModel=platform\:/resource/org.cimgym.cpsm/model/CPSM.ecore
+gmf_dashboard/generationModel=platform\:/resource/CIMGymCPSM/model/My.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/org.cimgym.cpsm/model/CPSM.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/org.cimgym.cpsm/model/CPSM.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/org.cimgym.cpsm/model/CPSM.gmftool
