@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CommonPowerSystemModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://iec.ch/TC57/2008/CIM-schema-cim13#">
+  <Elements xsi:type="cim:BusbarSection" name="BB1" Terminals="//@Elements.1"/>
+  <Elements xsi:type="cim:Terminal" name="T1" ConnectivityNode="//@Elements.2" ConductingEquipment="//@Elements.0"/>
+  <Elements xsi:type="cim:ConnectivityNode" Terminals="//@Elements.1 //@Elements.3"/>
+  <Elements xsi:type="cim:Terminal" name="T2" ConnectivityNode="//@Elements.2" ConductingEquipment="//@Elements.4"/>
+  <Elements xsi:type="cim:SynchronousMachine" name="SM1" Terminals="//@Elements.3"/>
+</cim:CommonPowerSystemModel>
