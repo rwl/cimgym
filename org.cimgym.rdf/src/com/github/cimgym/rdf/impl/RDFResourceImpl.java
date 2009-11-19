@@ -1,6 +1,7 @@
 package com.github.cimgym.rdf.impl;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Collections;
 import java.util.HashMap;
@@ -10,6 +11,7 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.impl.ResourceImpl;
 
 import com.github.cimgym.rdf.RDFHelper;
+import com.github.cimgym.rdf.RDFLoad;
 import com.github.cimgym.rdf.RDFResource;
 import com.github.cimgym.rdf.RDFSave;
 
@@ -44,8 +46,24 @@ public class RDFResourceImpl extends ResourceImpl implements RDFResource {
         return new RDFHelperImpl(this);
     }
 
+    protected RDFLoad createRDFLoad() {
+        return new RDFLoadImpl(createRDFHelper());
+    }
+
     protected RDFSave createRDFSave() {
         return new RDFSaveImpl(createRDFHelper());
+    }
+
+    @Override
+    public void doLoad(InputStream inputStream, Map<?, ?> options) throws IOException {
+        RDFLoad xmlLoad = createRDFLoad();
+
+        if (options == null) {
+            options = Collections.EMPTY_MAP;
+        }
+
+        xmlLoad.load(this, inputStream, options);
+        xmlLoad = null;
     }
 
     @Override
@@ -56,16 +74,6 @@ public class RDFResourceImpl extends ResourceImpl implements RDFResource {
             options = Collections.EMPTY_MAP;
         }
 
-//        ResourceHandler handler = (ResourceHandler)options.get(OPTION_RESOURCE_HANDLER);
-
-//        if (handler != null) {
-//            handler.preSave(this, outputStream, options);
-//        }
-
         rdfSave.save(this, outputStream, options);
-
-//        if (handler != null) {
-//            handler.postSave(this, outputStream, options);
-//        }
     }
 }
