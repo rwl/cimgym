@@ -1,0 +1,5 @@
+<c:setVariable var="entryOperation" select="$operationalTransformation/@entry"/>
+<c:if test="$entryOperation">
+<c:get select="$entryOperation/@name"/>() {
+}
+</c:if>

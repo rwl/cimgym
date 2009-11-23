@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.schema.omg.org/spec/QVT/1.0/qvtoperational"
+            class="qvtoperational.QvtoperationalPackage"
+            genModel="model/qvtoperational.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http:///emof.ecore"
+            class="emof.EmofPackage"
+            genModel="model/qvtoperational.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.schema.omg.org/spec/OCL/2.0/essentialocl"
+            class="essentialocl.EssentialoclPackage"
+            genModel="model/qvtoperational.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.schema.omg.org/spec/QVT/1.0/qvtrelation"
+            class="qvtrelation.QvtrelationPackage"
+            genModel="model/qvtoperational.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.schema.omg.org/spec/QVT/1.0/imperativeocl"
+            class="imperativeocl.ImperativeoclPackage"
+            genModel="model/qvtoperational.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.schema.omg.org/spec/QVT/1.0/qvtbase"
+            class="qvtbase.QvtbasePackage"
+            genModel="model/qvtoperational.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.schema.omg.org/spec/QVT/1.0/qvttemplate"
+            class="qvttemplate.QvttemplatePackage"
+            genModel="model/qvtoperational.genmodel"/>
+   </extension>
+
+</plugin>
