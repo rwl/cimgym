@@ -10,7 +10,7 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
 
-import CPSM.CPSMPackage;
+//import CPSM.CPSMPackage;
 
 import com.github.cimgym.rdf.impl.RDFResourceFactoryImpl;
 

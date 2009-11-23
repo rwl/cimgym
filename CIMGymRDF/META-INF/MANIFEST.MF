@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: CIMGym RDF
-Bundle-SymbolicName: com.github.cimgym.rdf;singleton:=true
+Bundle-SymbolicName: org.cimgym.rdf;singleton:=true
 Bundle-Version: 0.1.0.qualifier
 Bundle-Vendor: Richard Lincoln
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
